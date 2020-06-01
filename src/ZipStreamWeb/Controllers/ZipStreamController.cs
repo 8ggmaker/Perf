@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
+using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -13,6 +14,7 @@ namespace ZipStreamWeb.Controllers
 {
    public class ZipStreamController : ControllerBase
    {
+      private readonly static HttpClient client = new HttpClient();
       private readonly static string containerName = "testzipstream";
       private readonly AzureBlobHelper _blobHelper;
       public ZipStreamController( AzureBlobHelper blobHelper )
@@ -37,6 +39,15 @@ namespace ZipStreamWeb.Controllers
             }
          }
          return this.Ok();
+      }
+
+      [HttpGet]
+      [Route( "api/zip/iotest" )]
+      public async ValueTask<IActionResult> DoHttpAsync()
+      {
+         _ = await client.GetStringAsync( "https://www.microsoft.com" );
+         ThreadPool.GetAvailableThreads( out int workerThreads, out int iocpThreads );
+         return this.Ok(string.Format( "Available Worker Thread {0}, IOCP Thread {1}", workerThreads, iocpThreads ));
       }
 
       private async ValueTask DoZipStreamUploadByReadOnlyAsync( Stream stream )
@@ -86,5 +97,8 @@ namespace ZipStreamWeb.Controllers
             return ms;
          }
       }
+
+
+
    }
 }

@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipStreamWeb", "ZipStreamWeb\ZipStreamWeb.csproj", "{3870D9A4-D6A8-4EC0-83C7-DF6AE014CFF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipStreamWeb", "ZipStreamWeb\ZipStreamWeb.csproj", "{3870D9A4-D6A8-4EC0-83C7-DF6AE014CFF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{D540A932-2B92-4011-B454-63BDC82762CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{D540A932-2B92-4011-B454-63BDC82762CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOThread", "IOThread\IOThread.csproj", "{68A83C69-50EE-4F22-81A7-EEAF14C6E22A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOThreadNET45", "IOThreadNET45\IOThreadNET45.csproj", "{12E18AF4-C3E3-404B-A9D2-530A09F551BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPoolQueuing", "ThreadPoolQueuing\ThreadPoolQueuing.csproj", "{63934E34-3EBB-4E91-A097-7439B3CEE6AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPoolQueuingNETFramework", "ThreadPoolQueuingNETFramework\ThreadPoolQueuingNETFramework.csproj", "{5E3A04DD-32B2-4A7E-93B9-CEB539B1CD7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{D540A932-2B92-4011-B454-63BDC82762CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D540A932-2B92-4011-B454-63BDC82762CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D540A932-2B92-4011-B454-63BDC82762CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A83C69-50EE-4F22-81A7-EEAF14C6E22A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A83C69-50EE-4F22-81A7-EEAF14C6E22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A83C69-50EE-4F22-81A7-EEAF14C6E22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A83C69-50EE-4F22-81A7-EEAF14C6E22A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E18AF4-C3E3-404B-A9D2-530A09F551BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E18AF4-C3E3-404B-A9D2-530A09F551BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E18AF4-C3E3-404B-A9D2-530A09F551BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E18AF4-C3E3-404B-A9D2-530A09F551BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63934E34-3EBB-4E91-A097-7439B3CEE6AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63934E34-3EBB-4E91-A097-7439B3CEE6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63934E34-3EBB-4E91-A097-7439B3CEE6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63934E34-3EBB-4E91-A097-7439B3CEE6AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E3A04DD-32B2-4A7E-93B9-CEB539B1CD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E3A04DD-32B2-4A7E-93B9-CEB539B1CD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E3A04DD-32B2-4A7E-93B9-CEB539B1CD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E3A04DD-32B2-4A7E-93B9-CEB539B1CD7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
