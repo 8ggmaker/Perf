@@ -37,7 +37,7 @@ namespace ThreadPoolQueuing
 
       static async Task Process()
       {
-         //await Task.Yield();
+         await Task.Yield();
 
          var tcs = new TaskCompletionSource<bool>();
 
